@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
+
+    <style>
+        * { box-sizing : border-box;}
+
+        body {
+            margin : 0;
+            font-family: 'Noto Sans KR', sans-serif; 
+        }
+
+        .img-container {
+            float : left;
+            width : 33.33%;
+            padding : 5px;
+        }
+
+        .img-container img { width : 100%; }
+
+        .card {
+            box-shadow : 0 2px 5px rgba (0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+        }
+
+        .nav h1 { margin : 10px 0; }
+
+        .nav {
+            background-color: #333333;
+            padding : 10px;
+            text-align : left;
+            color : #f1f1f1;
+        }
+
+        .contents .img-container div {
+            background-color : #777777;
+            color : white;
+            text-align : center;
+            padding : 0;
+        }
+
+        .contents .img-container div h4 {
+            margin : 0;
+        }
+
+        footer {
+            background-color : #333333;
+            padding : 10px;
+            text-align : center;
+            color : #f1f1f1;
+        }
+        
+        .contents::after {
+            content : "";
+            display : table;
+            clear : both;
+        }
+    </style>
+
+</head>
+<body>
+    <!-- 문제 1) topnav 예제에서 중앙 컨텐츠 부분에 화면을 float을 사용하여 3등분하는 형태로 페이지를 만드세요. -->
+
+    <div class="nav">
+        <header>
+            <h1>Planet</h1>
+        </header>
+    </div>
+
+    <div class="contents">
+        <div class="img-container">
+            <img src="./images/earth.png" alt="">
+            <div class="card">
+                <h4>지구</h4>
+            </div>
+        </div>
+
+        <div class="img-container">
+            <img src="./images/venus.jpg" alt="">
+            <div>
+                <h4>금성</h4>
+            </div>
+        </div>
+
+        <div class="img-container">
+            <img src="./images/jupiter.jpg" alt="">
+            <div>
+                <h4>해왕성</h4>
+            </div>
+        </div>
+    </div>
+
+    <div class="contents">
+        <div class="img-container">
+            <img src="./images/moksung.jpg" alt="">
+            <div>
+                <h4>토성</h4>
+            </div>
+        </div>
+
+        <div class="img-container">
+            <img src="./images/pluto.jpg" alt="">
+            <div>
+                <h4>명왕성</h4>
+            </div>
+        </div>
+
+        <div class="img-container">
+            <img src="./images/chungwangsung.jpg" alt="">
+            <div>
+                <h4>천왕성</h4>
+            </div>
+        </div>
+    </div>
+    
+    <footer>Footer</footer>
+</body>
+</html>
