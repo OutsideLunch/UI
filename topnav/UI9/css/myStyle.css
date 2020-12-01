@@ -1,0 +1,38 @@
+
+/* https://www.w3schools.com/w3css/tryw3css_templates_gourmet_catering.htm */
+
+* {
+  box-sizing : border-box;
+  margin : 0;
+  padding : 0;
+}
+
+header {
+  padding : 8px 16px;
+  width : 100%;
+  /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); */
+}
+
+header nav ul {
+  list-style-type : none;
+  display : fixed;
+  overflow: hidden;
+  margin : 0;
+  padding : 0;
+}
+
+header nav ul li {
+  float : left;
+  /* padding: 8px 16px; */
+} 
+
+header nav ul li a {
+  text-decoration : none;
+  color : black;
+  padding : 8px 16px;
+}
+/* main에 margin-top : 50px; 넣어주기 */
+
+main {
+  margin-top : 50px;
+}

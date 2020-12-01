@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">    
+
+    <style>
+        * {
+            box-sizing : border-box;
+            font-family: 'Nanum Gothic', sans-serif;
+        }
+
+        body {
+            margin : 0px;
+            padding : 0px;
+        }
+
+        header {
+            padding : 15px;
+        }
+
+        .table {
+            width : 33.33%;
+            padding : 10px;
+            float : left;
+        }
+
+        .boxa {
+            padding : 16px;
+            background-color : black;
+            color : white;
+            text-align : center;
+            border : 1px solid lightgray;
+        }
+
+        .boxa1 {
+            padding : 16px;
+            background-color : #5caf5c;
+            color : white;
+            text-align : center;
+            border : 1px solid lightgray;
+        }
+
+        .boxb {
+            padding : 16px;
+            text-align : center;
+            border: 1px solid lightgray;
+        }
+
+        .boxb span {
+            color : rgba(128, 128, 128, 0.7);
+        }
+
+        .boxc {
+            padding : 24px;
+            text-align : center;
+            background-color : #ecebeb;
+            border: 1px solid lightgray;
+        }
+
+        .btn {
+            border : 0;
+            padding : 15px;
+            padding-right : 25px;
+            padding-left : 25px;
+            background-color: #49b449;
+            color : #f1f1f1;
+            font-size : 16px;
+        }
+
+        .btn:hover {
+            background-color : #c9c7c7;
+            color : black;
+        }
+
+        div::after {
+            content : "";
+            display : table;
+            clear : both;
+        }
+
+    </style>
+
+</head>
+<body>
+    <header><h2>Responsive Pricing Tables</h2></header>
+
+    <div class="table">
+        <div class="boxa"><h2>Basic</h2></div>
+        <div class="boxb"><b>10GB</b> Storage</div>
+        <div class="boxb"><b>10</b> Emails</div>
+        <div class="boxb"><b>10</b> Domains</div>
+        <div class="boxb"><b>Endless</b> Support</div>
+        <div class="boxb"><h2>$ 10</h2><span>per month</span></div>
+        <div class="boxc"><button class="btn">Sign Up</button></div>
+    </div>
+
+    <div class="table">
+        <div class="boxa1"><h2>Pro</h2></div>
+        <div class="boxb"><b>25GB</b> Storage</div>
+        <div class="boxb"><b>25</b> Emails</div>
+        <div class="boxb"><b>25</b> Domains</div>
+        <div class="boxb"><b>Endless</b> Support</div>
+        <div class="boxb"><h2>$ 25</h2><span>per month</span></div>
+        <div class="boxc"><button class="btn">Sign Up</button></div>
+    </div>
+
+    <div class="table">
+        <div class="boxa"><h2>Premium</h2></div>
+        <div class="boxb"><b>50GB</b> Storage</div>
+        <div class="boxb"><b>50</b> Emails</div>
+        <div class="boxb"><b>50</b> Domains</div>
+        <div class="boxb"><b>Endless</b> Support</div>
+        <div class="boxb"><h2>$ 50</h2><span>per month</span></div>
+        <div class="boxc"><button class="btn">Sign Up</button></div>
+    </div>
+</body>
+</html>
