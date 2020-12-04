@@ -1,0 +1,107 @@
+* { box-sizing: border-box; }
+
+/* font-family: 'Nanum Pen Script', cursive;
+font-family: 'Stylish', sans-serif; */
+
+body {
+    margin : 0;
+    font-family: 'Stylish', sans-serif;
+}
+
+header {
+    padding : 60px;
+    text-align : center;
+    background-color : cornflowerblue;
+    color : white;
+}
+
+nav::after {
+    content : "";
+    display : table;
+    clear : both;
+}
+
+nav ul {
+    list-style-type : none;
+    margin : 0px;
+    padding : 0px;
+    float : left;
+    width : 100%;
+    background-color : #e4a1a1;
+}
+
+nav ul li {
+    float : left;
+}
+
+nav li > a {
+    display : inline-block;
+    color : white;
+    padding : 16px;
+    text-decoration : none;
+    text-align: center;
+}
+
+nav li > a:hover {
+    background-color : #dddddd;
+    color : black;
+}
+
+footer {
+    padding : 20px;
+    float : left;
+    width : 100%;
+    text-align : center;
+    background-color : cornflowerblue;
+}
+
+main {
+    background-color : #eeeded;
+
+}
+
+main::after {
+    content : "";
+    display : table;
+    clear : both;
+}
+
+aside {
+    background-color : #d5e0f7;
+    float : left;
+    width : 30%;
+    padding : 20px;
+    height : 100%;
+}
+
+section {
+    float : left;
+    width : 70%;
+    padding : 20px;
+}
+
+.fake-img {
+    background-color: #ddc7c7;
+    width : 100%;
+    padding : 20px;
+}
+
+.photo-me { height : 200px; }
+
+.photo-link { height : 60px; }
+
+.photo-post { height : 200px; }
+
+article {
+    padding : 10px;
+    margin-bottom : 10px;
+}
+
+@media all and (max-width: 576px) {
+    nav ul li { width : 100%; }
+
+    aside, section {
+        width : 100%;
+    }
+        /* float 사용 시 main의 자손 태그인 aside, section의 width를 100%로 변경 */
+}

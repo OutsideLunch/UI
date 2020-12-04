@@ -1,0 +1,30 @@
+* { box-sizing: border-box; }
+
+.box {
+    width : 100px;
+    height : 100px;
+    border : 1px solid black;
+    background-color : white;
+}
+
+.container {
+    height : 300px;
+    background-color : dodgerblue;
+    position : relative;
+}
+
+.center1 {
+    position : absolute;
+    top : 50%;
+    left : 50%;
+    /* 자기 자신의 크기에 비례해서 이동시켜 줌 */
+    transform : translate(-50%, -50%);
+}
+
+.flex-container {
+    height : 300px;
+    background-color : dodgerblue;
+    display : flex;
+    align-items: center;
+    justify-content : center;
+}

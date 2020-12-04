@@ -1,0 +1,33 @@
+* { box-sizing : border-box; }
+
+body { margin : 0; }
+
+section {
+    display : flex;
+    flex-wrap : wrap;
+    flex-direction: row;
+}
+
+article {
+    flex: 25%;
+    /* max-width: 25%; */
+}
+
+article img {
+    width : 100%;
+}
+
+
+@media all and (max-width: 768px) {
+    article {
+        flex: 50%;
+        /* max-width: 50%; */
+    }
+}
+
+@media all and (max-width: 576px) {
+    article {
+        flex: 100%;
+        /* max-width: 100%; */
+    }
+}
